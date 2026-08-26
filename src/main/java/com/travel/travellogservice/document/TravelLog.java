@@ -21,4 +21,6 @@ public class TravelLog {
 
     private String note;
 
+    private List<String> mediaLinks;
+
 }

@@ -45,6 +45,7 @@ public class TravelLogController {
                 .map(log -> {
                     log.setTripId(logDetails.getTripId());
                     log.setNote(logDetails.getNote());
+                    log.setMediaLinks(logDetails.getMediaLinks());
                     return ResponseEntity.ok(travelLogRepository.save(log));
                 })
                 .orElse(ResponseEntity.notFound().build());
