@@ -12,7 +12,6 @@ import java.util.List;
 @RestController
 @RequestMapping("/travel-logs")
 @RequiredArgsConstructor
-@CrossOrigin(origins = "*")
 public class TravelLogController {
 
     private final TravelLogRepository travelLogRepository;
